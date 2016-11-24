@@ -1,0 +1,21 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=/root/.oh-my-zsh
+
+ZSH_THEME="candy"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+alias gs='git status'
+alias ga='git add -A'
+alias gp='git pull origin master'
+alias gpu='git push origin master'
+alias gc='git checkout'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
